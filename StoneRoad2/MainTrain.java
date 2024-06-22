@@ -95,17 +95,17 @@ public class MainTrain {
 		out.close();
 
 		if(!IOSearcher.search("is", "text1.txt","text2.txt"))
-			System.out.println("your IOsearch did not found a word (-5)");
+			System.out.println("your IOsearcher did not found a word (-5)");
 		if(IOSearcher.search("cat", "text1.txt","text2.txt"))
-			System.out.println("your IOsearch found a word that does not exist (-5)");
+			System.out.println("your IOsearcher found a word that does not exist (-5)");
 	}
 
 	public static void testDictionary() {
 		Dictionary d = new Dictionary("text1.txt","text2.txt");
 		if(!d.query("is"))
-			System.out.println("problem with dictionarry in query (-5)");
+			System.out.println("problem with dictionary in query (-5)");
 		if(!d.challenge("lazy"))
-			System.out.println("problem with dictionarry in query (-5)");
+			System.out.println("problem with dictionary in query (-5)");
 	}
 
 	public static void main(String[] args) {
